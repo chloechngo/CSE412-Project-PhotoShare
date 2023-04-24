@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <title>Register</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+
+  <style>
+    body, h1, h2, h3, h4, h5, h6 {
+      font-family: "Open Sans", sans-serif;
+      font-size: 25px;
+      line-height: 1.5;
+      color: #333;
+
+    }
+    
+    body, html {
+      height: 100%;
+      color: #777;
+      line-height: 1.8;
+    }
+    
+    .centerVH {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+    .button {
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+    
+    .active {
+      background-color: #04AA6D;
+    }
+  </style>
+            
+  <header>
+
+    <ul>
+      <li><a href="/">HOME</a></li>
+      <li><a href="/register">Register</a></li>
+      <li><a href="/login">Sign in</a></li>
+      <li><a href="/albums">Albums</a></li>
+      <li><a href="/account">Users</a></li>
+      <li><a href="/logout">Sign out</a></li>
+    </ul>
+ 
+  </header>
+
+  <body>
+    <div class="centerVH w3-display-container w3-opacity-min">
+              <form method="post" action="{{ url_for('signed_up_usr') }}">
+                <label for="firstn">First name:</label>
+                <input type="text" name = "firstn" /><br />
+                <label for="lastn">Last name:</label>
+                <input type="text" name = "lastn" /><br />
+                <label for="dateofbirth">Birthday:</label>
+                <input type="text" name = "dateofbirth" /><br />
+                <label for="gender">Gender:</label>
+                <input type="text" name = "gender" /><br />
+                <label for="hometown">Hometown:</label>
+                <input type="text" name = "hometown" /><br /><br />
+               
+                <label for="email">Email:</label>
+                <input type="email" name="email" /><br />
+                <label for="password">Password:</label>
+                <input type="password" name="password" /><br />
+               
+                <input type="submit" />
+            </form></br>
+          </div>        
+            
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+            
+  </body>
+          
+</html>
+  
